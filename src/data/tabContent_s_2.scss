@@ -1,0 +1,55 @@
+.phone-title,
+.email-title,
+.adress-title,
+.uni-title,
+.project-title,
+.looking-place-title,
+.looking-job-title,
+.lang-title,
+.skill-title {
+    text-transform: uppercase;
+    color: #41EAD4;
+    font-size: 20px;
+}
+
+.email {
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #41EAD4;
+    }
+}
+
+.looking-place {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+
+    .phone-title,
+    .email-title,
+    .adress-title,
+    .uni-title,
+    .project-title,
+    .looking-place-title,
+    .looking-job-title,
+    .lang-title,
+    .skill-title {
+        font-size: 14px;
+    }
+
+    .phone-content,
+    .email-content,
+    .adress-content,
+    .uni-content,
+    .project-content,
+    .looking-place-content,
+    .looking-job-content,
+    .lang-content,
+    .skill-content {
+        font-size: 14px;
+    }
+}

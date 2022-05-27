@@ -1,0 +1,38 @@
+.section-2 {
+    margin-bottom: 100px;
+    color: white;
+
+    // .tab-header-item, span, .tab-content {
+    //     color: white;
+    // }
+}
+
+@media (max-width: 991.98px){
+    .section-2{
+        .header{
+            flex-direction: column;
+        }
+
+        .header-description{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .section-2{
+        .header-title{
+            font-size: 25px;
+        }
+
+        .header-description{
+            font-size: 14px;
+        }
+
+        .tab-header-item{
+            font-size: 12px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

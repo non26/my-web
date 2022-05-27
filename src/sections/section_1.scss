@@ -1,0 +1,127 @@
+.section-1 {
+    height: 100vh;
+    position: relative;
+
+    .bg{
+        position: relative
+    }
+
+    .bg-image {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .footer-gradient{
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right:0;
+    }
+
+    .my-btn {
+        padding: 20px 58px;
+        background: #00C9E0;
+        box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+        border-radius: 48px;
+
+        color: white;
+    }
+
+    .header {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    .description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .name,
+    .job {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .name {
+        font-size: 80px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .job {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .scroll-label-container {
+        position: absolute;
+        bottom: 200px;
+        left: 50px;
+
+        transform: rotate(-90deg);
+    }
+
+    .scroll-label {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 190%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.9;
+        text-transform: uppercase;
+
+        position: relative;
+    }
+
+    .scroll-label::before {
+        content: "";
+        width: 2px;
+        height: 50px;
+        background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+        border-radius: 13px;
+        transform: rotate(-90deg);
+
+        position: absolute;
+        left: -30px;
+        top: -10px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .section-1{
+        .name {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-1{
+        .name {
+            font-size: 25px;
+        }
+
+        .job {
+            font-size: 16px;
+        }
+
+        .scroll-label-container{
+            bottom: 90px;
+            left: 45%;
+            // transform: rotate(-90deg) translateX(-50%);
+        }
+    }
+}

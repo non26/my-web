@@ -1,0 +1,25 @@
+.tab-header-item{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tab-header-item.active-tab{
+    color: #41EAD4;
+}
+
+.tab-header{
+    border-bottom: 2px solid rgba(#41EAD4, 0.3);
+    position: relative;
+}
+
+.tab-line-indicator{
+    position: absolute;
+    bottom: -1.5px;
+    width: 25%;
+    height: 4px;
+    background-color: #41EAD4;
+}
+
+.tab-content-container{
+    margin: 20px;
+}

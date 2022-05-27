@@ -1,0 +1,26 @@
+.my-btn {
+    position: relative;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+
+.my-btn:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+
+    background: white;
+    border-radius: 16px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -14px;
+
+}

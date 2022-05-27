@@ -1,0 +1,129 @@
+.section-3 {
+    position: relative;
+    color: white;
+
+    .content-container,
+    .content-results,
+    .content-to-do-more {
+        position: relative;
+        z-index: 100;
+    }
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bg-image {
+        width: 100%;
+        background-color: #011627;
+    }
+
+    .content-tab {
+        margin-bottom: 100px;
+    }
+
+    .content-results {
+        margin-bottom: 100px;
+    }
+
+    .results {
+        margin: 0 10%;
+        padding: 50px 0;
+        background: #011627;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .results::before, .results::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        height: 80px;
+        width: 2px;
+        background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+        border-radius: 13px;
+    }
+
+    .results::before{
+        top: -40px;
+    }
+
+    .results::after{
+        bottom: -40px;
+    }
+
+    .result-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .result-sub-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    .content-to-do-more{
+        padding-bottom: 100px;
+    }
+
+    .to-do-more-container {
+        margin: 0 10%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        color: #011627;
+
+    }
+
+    .to-do-title{
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 991.98px){
+    .section-3{
+        .header{
+            flex-direction: column;
+        }
+
+        .header-description{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767.98px){
+    .section-3{
+        .result-title{
+            font-size: 25px;
+        }
+
+        .result-sub-title{
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .section-3{
+        .header-title{
+            font-size: 25px;
+        }
+
+        .header-description{
+            font-size: 14px;
+        }
+    }
+}
